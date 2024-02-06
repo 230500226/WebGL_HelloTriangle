@@ -9,6 +9,29 @@ function hexagon(){
 const canvas = document.getElementById('IDcanvas');
 const gl = canvas.getContext('webgl2');
 
+<<<<<<< HEAD
+showError("Hello test error 1");
+
+function helloTriangle(){ //start code for triangle
+    const canvas  = document.getElementById("IDcanvas"); //get ref for the canvas by ID
+    if (!canvas){
+        showError("Can't find canvas reference"); //error from typo or pre loaded canvas
+        return;
+    }
+    const gl = canvas.getContext('webgl2'); //get ref for webgl2
+    if (!gl){
+        showError("Can't find webgl2 support"); //error from browser support for webgl2
+        return;
+    }
+    
+    const triangleVertices = [ //define vertices for triangle
+    // Top middle
+    0.0, 0.5,
+    // Bottom left
+    -0.5, -0.5,
+    // Bottom right
+    0.5, -0.5
+=======
     const hexagonVertices = [
         -0.4, 0.9,
         0.4, 0.9,
@@ -16,6 +39,7 @@ const gl = canvas.getContext('webgl2');
         0.4, -0.9,
         -0.4, -0.9,
         -0.9, 0
+>>>>>>> affe03d799617d92f90f716f29c82d488fee6f11
     ];
 
 const hexagonCpuBuffer = new Float32Array(hexagonVertices);
